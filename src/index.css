@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+body {
+  margin: 0;
+  font-family: "Montserrat";
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* Color */
+
+:root {
+  --white: #fff;
+  --yellow: #ff8a00;
+  --lightyellow: #f8ca53;
+  --gold: #f2a031;
+  --lightdark: #93acca2b;
+  --lightblue: #93acca;
+  --blue: #0949a4;
+  --border: #2283f6;
+  --primary: #353d67;
+  --dark: #161f2c;
+  --card: #222939;
+  --black: #0d131c;
+  --reddark: #6c0205;
+  --redlight: #d00010;
+}
+/* ******* */
+
+.App {
+  padding: 15px;
+  background: #0d131c;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 49px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #f8ca53;
+}
+
+p,
+.p-bold {
+  font-size: 16px;
+  line-height: 22px;
+  color: white;
+}
+
+p {
+  font-weight: 400;
+}
+
+.p-bold {
+  font-weight: 700;
+}
+
+.p-inCards {
+  line-height: 0;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.star {
+  height: 17px;
+  align-self: center;
+  cursor: pointer;
+}
+
+/* Card title */
+.CardContainer {
+  /* width: 25%; */
+  background-color: var(--card);
+  border-radius: 16px;
+}
+
+.CardInfoIcon {
+  height: 32px;
+  align-self: center;
+  margin-right: 8px;
+}
+/* ******* */
+
+.centralDiv {
+  background-color: var(--dark);
+  margin: 20px 15px 60px 15px;
+  border-radius: 21px;
+  padding-bottom: 40px;
+}
+
+.width25 {
+  width: 25%;
+}
+
+.width50 {
+  width: 50%;
+}
+
+.Section1,
+.Section3 {
+  display: flex;
+}
+
+@media (max-width: 1540px) {
+  /* h2 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #f8ca53;
+  } */
+}
+
+@media (max-width: 768px) {
+  .width50,
+  .width25, 
+  .sliderContainer {
+    width: 100%;
+  }
+
+  .Section1,
+  .Section3 {
+    flex-direction: column;
+  }
+
+  .User-m {
+    display: flex;
+    justify-content: space-between;
+    background: var(--dark);
+    padding: 10px;
+  }
+}
+
+
+
+
+/* ******** */
+
+/* MIN width */
+@media (min-width: 769px) {
+  .MobileAppContainer {
+    display: none;
+  }
+}
+
+/* MAX width */
+@media (max-width: 768px) {
+  .homeContainer {
+    display: none;
+  }
+}

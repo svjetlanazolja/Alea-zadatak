@@ -1,0 +1,80 @@
+#recommendedGamesCard .slick-slide div {
+  display: flex;
+}
+
+#recommendedGamesCard .slick-list {
+  padding: 0 !important;
+  margin: 5px;
+  margin: 60px 0;
+}
+
+#recommendedGamesCard h2,
+.TournamentsContainer h2 {
+  margin-left: 30px;
+}
+
+.recommendedGamesCard {
+  background-color: var(--card);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.slick-prev,
+.slick-next {
+  top: -20px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 25px;
+}
+
+.slick-prev {
+  right: 50px !important;
+  left: unset;
+}
+
+.slick-next {
+  right: 20px;
+}
+
+.paceholder25 {
+  width: 25%;
+}
+
+.cardDescription {
+  justify-content: space-between;
+}
+
+.cardItems {
+  display: flex;
+  flex-direction: column;
+}
+
+.slick-dots li.slick-active button:before, 
+.slick-dots li button:before {
+  color: var(--white);
+}
+
+
+/* .cardItems .fill {
+  background: var(--primary);
+  width: fit-content;
+  margin: 7px 0;
+  border-radius: 8px;
+  padding: 2px 14px;
+} */
+
+@media (max-width: 768px) {
+  #recommendedGamesCard .slick-slide div {
+    justify-content: center;
+  }
+
+  @media (max-width: 375px) {
+    .slick-dots {
+      bottom: -60px;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.DropbarContainer {
+  display: flex;
+  background-color: var(--dark);
+  height: 100%;
+  align-items: center;
+  border-radius: 0 16px 16px 0;
+  padding: 0 10px;
+}
+
+.DropdownMenu {
+  width: 150px;
+}
+
+.DropbarButton {
+  background-color: var(--dark);
+  color: var(--white);
+  border: none;
+}
+
+.DropbarButton option {
+  background-color: var(--dark);
+  border: none;
+}
+

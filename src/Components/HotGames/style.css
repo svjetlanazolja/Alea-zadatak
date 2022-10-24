@@ -1,0 +1,21 @@
+.HotGamesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    background: #222939;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 0 0 16px 16px;
+}
+
+.HotGamesCard {
+    width: 48%;
+}
+
+.HotGamesCard .GamesImg {
+    width: 100%;
+}
+
+.HotGameItem {
+    display: flex;
+    justify-content: space-between;
+}

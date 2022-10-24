@@ -1,0 +1,67 @@
+.countdown-container {
+  padding: 20px;
+}
+
+.countdown-timer {
+    justify-content: center;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgb(0 5 6) 35%, rgb(3 9 10) 100%);
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.countdown-timer span {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.two-numbers {
+  width: 2ch;
+  font-weight: bold;
+}
+
+.time-circle {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--yellow);
+  border-radius: 40px;
+  padding: 3px 6px;
+  width: 46px;
+  text-align: center;
+  height: 48px;
+  overflow: hidden;
+  margin: 0 3px;
+}
+
+.time-circle span {
+  color: var(--white);
+}
+
+.time-desc {
+  font-size: 14px;
+}
+
+.white-dots {
+  color: var(--white);
+}
+
+.CountDownTimersCards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.countdown-container .button-container {
+    background-color: black;
+    text-align: center;
+    padding: 30px 0 50px 0;
+    border-radius: 0 0 21px 21px;
+}
+
+.image-tournaments {
+    margin-bottom: -4px;
+}
+
+

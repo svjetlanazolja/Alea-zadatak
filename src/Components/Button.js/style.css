@@ -1,0 +1,90 @@
+.btn {
+    font-family: "Montserrat";
+    font-weight: 400;
+    cursor: pointer;
+    transition: transform 0.3s else;
+}
+
+/* Button colors and Styles */
+
+.btn--primary {
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn--primary:active {
+    background-color: var(--yellow);
+    color: var(--dark);
+}
+
+.btn--nav, 
+.btn--nav:active {
+    background-color: var(--dark);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn--nav:hover {
+    background-color: var(--lightdark);
+}
+
+.btn--yellow {
+    /* background-color: var(--yellow); */
+    background: linear-gradient(91.15deg, #F2A031 6.89%, #F2A031 29.52%, #F8CA53 40.31%, #FCE468 48.99%, #FDEE70 54.12%, #FCEA6D 60.83%, #FBDD62 67.91%, #F8C952 74.88%, #F6BD48 88.11%, #F5B743 101.25%);
+    color: var(--dark);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.btn--shop {
+    background-color: var(--gold);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn--join {
+    background-color: var(--blue);
+    color: var(--lightyellow);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Button Size */
+
+.btn--small {
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+.btn--medium {
+    padding: 7px 12px;
+    font-size: 14px;
+}
+
+.btn--large {
+    padding: 13px 24px;
+    font-size: 16px;
+}
+
+@media (max-width: 1600px) {
+    .btn--large {
+        padding: 13px 14px;
+    }
+}
+
+@media (max-width: 1366px) {
+    .btn--large {
+        padding: 13px 10px;
+        font-size: 14px;
+    }
+}

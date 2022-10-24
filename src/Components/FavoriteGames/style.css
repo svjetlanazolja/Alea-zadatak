@@ -1,0 +1,34 @@
+.FavoriteGamesContainer {
+  padding: 0 15px;
+}
+
+.FavoriteWinsData {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.DescriptionItem {
+  display: flex;
+}
+
+.DescriptionItem p {
+  padding: 3px;
+}
+
+.Section2 .CardContainer {
+    height: max-content;
+}
+
+.Section2 {
+  margin: 15px 0;
+}
+
+.FavoritetWinsDescription {
+    width: 65%;
+}
+
+/* @media (max-width: 1440px) {
+ 
+
+} */

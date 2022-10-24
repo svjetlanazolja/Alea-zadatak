@@ -1,0 +1,318 @@
+{
+  "hotgames": [
+    {
+      "id": 1,
+      "title": "A Night Out",
+      "path": "/assets/HotGames/A_Night_Out.png",
+      "starPath": "/assets/HotGames/Star.png"
+    },
+    {
+      "id": 2,
+      "title": "Age of Egypt",
+      "path": "/assets/HotGames/Age_of_Egypt.png",
+      "starPath": "/assets/HotGames/Star.png"
+    },
+    {
+      "id": 3,
+      "title": "Age of the Gods",
+      "path": "/assets/HotGames/Age_of_the_Gods1.png",
+      "starPath": "/assets/HotGames/Star.png"
+    },
+    {
+      "id": 4,
+      "title": "Age of the Gods",
+      "path": "/assets/HotGames/Age_of_the_Gods.png",
+      "starPath": "/assets/HotGames/Star.png"
+    }
+  ],
+
+  "biggestWins": [
+    {
+      "id": 1,
+      "title": "Might of Poseidon",
+      "path": "/assets/BiggestWins/Might_of_Poseidon.png",
+      "starPath": "/assets/BiggestWins/Star.png",
+      "slot": "slottest",
+      "price": "$450,00"
+    },
+    {
+      "id": 2,
+      "title": "Fox of Fortune",
+      "path": "/assets/BiggestWins/Fox_of_Fortune.png",
+      "starPath": "/assets/BiggestWins/Star.png",
+      "slot": "testslot",
+      "price": "$1250,00"
+    }
+  ],
+  "favoriteGames": [
+    {
+      "id": 1,
+      "title": "Age of Egypt",
+      "path": "/assets/FavoriteGames/Age_of_Egypt.png",
+      "starPath": "/assets/FavoriteGames/Star.png",
+      "reels": "5 reels",
+      "jackpot": "Jackpot",
+      "bonus": "Bonus"
+    },
+    {
+      "id": 2,
+      "title": "Age of the Gods",
+      "path": "/assets/FavoriteGames/Age_of_the_Gods.png",
+      "starPath": "/assets/FavoriteGames/Star.png",
+      "reels": "5 reels",
+      "bonus": "Bonus"
+    }
+  ],
+  "mostPlayedGames": [
+    {
+      "id": 1,
+      "title": "Might of Poseidon",
+      "path": "/assets/MostPlayedGames/Might_of_Poseidon.png",
+      "starPath": "/assets/MostPlayedGames/Star.png",
+      "reels": "5 reels",
+      "jackpot": "Jackpot",
+      "bonus": "Bonus"
+    },
+    {
+      "id": 2,
+      "title": "Long Long Long",
+      "path": "/assets/MostPlayedGames/Long_Long_Long.png",
+      "starPath": "/assets/MostPlayedGames/Star.png",
+      "reels": "5 reels",
+      "jackpot": "Jackpot"
+    },
+    {
+      "id": 3,
+      "title": "Shamrock Hot 40",
+      "path": "/assets/MostPlayedGames/Shamroc_ Hot_40.png",
+      "starPath": "/assets/MostPlayedGames/Star.png",
+      "reels": "5 reels"
+    },
+    {
+      "id": 4,
+      "title": "Banana Jocker",
+      "path": "/assets/MostPlayedGames/Banana_Joker.png",
+      "starPath": "/assets/MostPlayedGames/Star.png",
+      "reels": "5 reels",
+      "jackpot": "Jackpot"
+    }
+  ],
+  "recommendedGames": [
+    {
+      "id": 1,
+      "title": "Age of the Gods: Glor",
+      "path": "/assets/RecommendedGames/Age_of_the_Gods1.png",
+      "starPath": "/assets/RecommendedGames/Star.png",
+      "reels": "5 Reels",
+      "jackpot": "Jackpot",
+      "icon": "/assets/RecommendedGames/Money.png"
+    },
+    {
+      "id": 2,
+      "title": "Age of the Gods: Glor",
+      "path": "/assets/RecommendedGames/Age_of_the_Gods7.png",
+      "starPath": "/assets/RecommendedGames/Star.png",
+      "reels": "5 Reels",
+      "jackpot": "Jackpot",
+      "icon": "/assets/RecommendedGames/Money.png"
+    },
+    {
+      "id": 3,
+      "title": "Age of the Gods: Glor",
+      "path": "/assets/RecommendedGames/Age_of_the_Gods3.png",
+      "starPath": "/assets/RecommendedGames/Star.png",
+      "reels": "5 Reels",
+      "jackpot": "Jackpot",
+      "freespin": "Freespin",
+      "icon": "/assets/RecommendedGames/Money.png"
+    },
+    {
+      "id": 4,
+      "title": "Age of the Gods: Glor",
+      "path": "/assets/RecommendedGames/Age_of_the_Gods5.png",
+      "starPath": "/assets/RecommendedGames/Star.png",
+      "reels": "5 Reels",
+      "jackpot": "Jackpot",
+      "icon": "/assets/RecommendedGames/Money.png"
+    },
+    {
+      "id": 5,
+      "title": "Age of the Gods: Glor",
+      "path": "/assets/RecommendedGames/Age_of_the_Gods6.png",
+      "starPath": "/assets/RecommendedGames/Star.png",
+      "reels": "5 Reels",
+      "jackpot": "Jackpot",
+      "icon": "/assets/RecommendedGames/Money.png"
+    },
+    {
+      "id": 6,
+      "title": "Age of the Gods: Glor",
+      "path": "/assets/RecommendedGames/Age_of_the_Gods7.png",
+      "starPath": "/assets/RecommendedGames/Star.png",
+      "reels": "5 Reels",
+      "jackpot": "Jackpot",
+      "icon": "/assets/RecommendedGames/Money.png"
+    },
+    {
+      "id": 7,
+      "title": "Age of the Gods: Glor",
+      "path": "/assets/RecommendedGames/Age_of_the_Gods1.png",
+      "starPath": "/assets/RecommendedGames/Star.png",
+      "reels": "5 Reels",
+      "jackpot": "Jackpot",
+      "icon": "/assets/RecommendedGames/Money.png"
+    },
+    {
+      "id": 8,
+      "title": "Age of the Gods: Glor",
+      "path": "/assets/RecommendedGames/Age_of_the_Gods7.png",
+      "starPath": "/assets/RecommendedGames/Star.png",
+      "reels": "5 Reels",
+      "jackpot": "Jackpot",
+      "icon": "/assets/RecommendedGames/Money.png"
+    },
+    {
+      "id": 9,
+      "title": "Age of the Gods: Glor",
+      "path": "/assets/RecommendedGames/Age_of_the_Gods1.png",
+      "starPath": "/assets/RecommendedGames/Star.png",
+      "reels": "5 Reels",
+      "jackpot": "Jackpot",
+      "icon": "/assets/RecommendedGames/Money.png"
+    },
+    {
+      "id": 10,
+      "title": "Age of the Gods: Glor",
+      "path": "/assets/RecommendedGames/Age_of_the_Gods7.png",
+      "starPath": "/assets/RecommendedGames/Star.png",
+      "reels": "5 Reels",
+      "jackpot": "Jackpot",
+      "icon": "/assets/RecommendedGames/Money.png"
+    },
+    {
+      "id": 11,
+      "title": "Age of the Gods: Glor",
+      "path": "/assets/RecommendedGames/Age_of_the_Gods6.png",
+      "starPath": "/assets/RecommendedGames/Star.png",
+      "reels": "5 Reels",
+      "jackpot": "Jackpot",
+      "icon": "/assets/RecommendedGames/Money.png"
+    },
+    {
+      "id": 12,
+      "title": "Age of the Gods: Glor",
+      "path": "/assets/RecommendedGames/Age_of_the_Gods5.png",
+      "starPath": "/assets/RecommendedGames/Star.png",
+      "reels": "5 Reels",
+      "jackpot": "Jackpot",
+      "icon": "/assets/RecommendedGames/Money.png"
+    },
+    {
+      "id": 13,
+      "title": "Age of the Gods: Glor",
+      "path": "/assets/RecommendedGames/Age_of_the_Gods1.png",
+      "starPath": "/assets/RecommendedGames/Star.png",
+      "reels": "5 Reels",
+      "jackpot": "Jackpot",
+      "icon": "/assets/RecommendedGames/Money.png"
+    },
+    {
+      "id": 14,
+      "title": "Age of the Gods: Glor",
+      "path": "/assets/RecommendedGames/Age_of_the_Gods7.png",
+      "starPath": "/assets/RecommendedGames/Star.png",
+      "reels": "5 Reels",
+      "jackpot": "Jackpot",
+      "icon": "/assets/RecommendedGames/Money.png"
+    },
+    {
+      "id": 15,
+      "title": "Age of the Gods: Glor",
+      "path": "/assets/RecommendedGames/Age_of_the_Gods1.png",
+      "starPath": "/assets/RecommendedGames/Star.png",
+      "reels": "5 Reels",
+      "jackpot": "Jackpot", 
+      "icon" : "/assets/RecommendedGames/Money.png"
+    },
+    {
+      "id": 16,
+      "title": "Age of the Gods: Glor",
+      "path": "/assets/RecommendedGames/Age_of_the_Gods7.png",
+      "starPath": "/assets/RecommendedGames/Star.png",
+      "reels": "5 Reels",
+      "jackpot": "Jackpot", 
+      "icon" : "/assets/RecommendedGames/Money.png"
+    }
+  ],
+  "navbarItems": [
+    {
+      "id": 1,
+      "title": "Home",
+      "path": "/assets/IconNavbar/Home.svg"
+    },
+    {
+      "id": 2,
+      "title": "Slots",
+      "path": "/assets/IconNavbar/Slots.svg"
+    },
+    {
+      "id": 3,
+      "title": "Arcade",
+      "path": "/assets/IconNavbar/Arcade.svg"
+    },
+    {
+      "id": 4,
+      "title": "Casino",
+      "path": "/assets/IconNavbar/Casino.svg"
+    },
+    {
+      "id": 5,
+      "title": "Table",
+      "path": "/assets/IconNavbar/Table.svg"
+    },
+    {
+      "id": 6,
+      "title": "Tournaments",
+      "path": "/assets/IconNavbar/Tournaments.svg"
+    },
+    {
+      "id": 7,
+      "title": "THB 9,99..",
+      "path": "/assets/IconNavbar/THB.svg"
+    }
+  ],
+  "imagesSlider": [
+    {
+      "id": 1,
+      "path": "/assets/ImageSlider/Buffalo_Blitz.png"
+    },
+    {
+      "id": 2,
+      "path": "/assets/ImageSlider/Buffalo_Blitz.png"
+    },
+    {
+      "id": 3,
+      "path": "/assets/ImageSlider/Buffalo_Blitz.png"
+    }
+  ],
+  "informationCard": [
+    {
+      "id": 1,
+      "title": "$125,590,26...",
+      "path": "/assets/InformationsCard/Total_payout.png",
+      "info": "Total payload"
+    },
+    {
+      "id": 2,
+      "title": "17577",
+      "path": "/assets/InformationsCard/Big_Wins.png",
+      "info": "Big Wins"
+    },
+    {
+      "id": 3,
+      "title": "756",
+      "path": "/assets/InformationsCard/Players_Online.png",
+      "info": "Players Online"
+    }
+  ]
+}

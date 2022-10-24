@@ -1,0 +1,84 @@
+.NavbarContainer {
+  display: flex;
+  width: 75%;
+}
+
+.NavbarItems {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  background-color: var(--dark);
+  /* border-radius: 0 16px 16px 0; */
+}
+
+.NavbarUL {
+  list-style-type: none;
+  padding-inline-start: 0;
+  margin-block-start: 6px;
+  margin-block-end: 6px;
+  margin-inline-start: 6px;
+  margin-inline-end: 6px;
+}
+
+.NavbarData ul li {
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0px 10px;
+  border-radius: 8px;
+}
+
+.NavbarData ul li:hover {
+  background-color: var(--lightdark);
+}
+
+/* active btn */
+.NavbarData:first-child ul li:first-child {
+  /* background-color: var(--yellow); */
+  background: linear-gradient(
+    266.34deg,
+    #ffba00 7.54%,
+    #ffaa00 37.91%,
+    #ff8a00 96.62%
+  );
+}
+
+.NavbarData:first-child ul li:first-child p {
+  color: var(--dark);
+  font-weight: 900;
+}
+
+.NavbarList,
+.NavbarItemsContainer {
+  display: flex;
+  text-decoration: none;
+}
+
+.NavbarList img,
+.gameShopImg {
+  margin-right: 12px;
+}
+
+.buttonContainer {
+  width: 25%;
+  align-self: center;
+  background-color: var(--dark);
+  border-radius: 16px 0 0 16px;
+  padding: 7px;
+}
+
+@media (max-width: 1440px) {
+  .buttonContainer,
+  .NavbarContainer {
+    width: auto;
+  }
+
+  .NavbarItemsContainer {
+    width: 100%;
+    justify-content: space-between;
+    background-color: var(--dark);
+    border-radius: 16px;
+  }
+}
+
+

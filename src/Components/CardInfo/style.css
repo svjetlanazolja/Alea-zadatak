@@ -1,0 +1,14 @@
+.CardInfoContainer {
+    background: linear-gradient(90deg, #6C0205 0%, #D00010 100%);
+    border-radius: 16px 16px 0 0 ;
+}
+
+.CardInfoDescription {
+    display: flex;
+    padding: 0 14px;
+}
+
+.CarInfoImage {
+    margin-right: 8px;
+    align-self: center;
+}

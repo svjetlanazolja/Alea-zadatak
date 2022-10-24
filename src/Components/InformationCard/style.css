@@ -1,0 +1,51 @@
+.InformationCardContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.InformationsCardData {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  background: var(--dark);
+  width: 27%;
+  border-radius: 16px;
+  padding: 0 13px;
+  overflow: hidden;
+  border: 1px solid var(--gold);
+}
+
+.InformationDescription {
+  align-self: center;
+}
+
+.infoTitle {
+  font-weight: 700;
+  color: var(--white);
+  line-height: 16px;
+}
+
+.infoP {
+  color: var(--lightblue);
+}
+
+@media (max-width: 768px) {
+  .InformationCard-m  .InformationCardContainer {
+    flex-direction: column;
+  }
+
+  .InformationCard-m .InformationsCardData {
+    width: 100%;
+    padding: 0;
+    margin: 10px 0;
+  }
+
+  .InformationCard-m .InformationCardContainer {
+    padding: 0;
+  }
+
+  .InformationCard-m .BigestWinsImage {
+    padding-left: 15px;
+  }
+}

@@ -1,0 +1,28 @@
+.BigestWinsData {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+  gap: 15px;
+}
+
+.BigestWinsImage {
+  margin: auto 0;
+}
+
+.BigestWinsDescription {
+  width: 50%;
+}
+
+.BiggestWingsStar {
+  margin-top: 18px;
+}
+
+.height {
+  line-height: 10px;
+}
+
+@media (max-width: 768px) {
+  .BiggestWins-m {
+    margin: 20px 0;
+  }
+}
