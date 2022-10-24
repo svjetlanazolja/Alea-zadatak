@@ -6,6 +6,7 @@
 .NavbarItems {
   display: flex;
   justify-content: space-around !important;
+  
   width: 100%;
   flex-wrap: wrap;
   background-color: var(--dark);
