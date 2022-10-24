@@ -10,7 +10,6 @@
   width: 100%;
   flex-wrap: wrap;
   background-color: var(--dark);
-  /* border-radius: 0 16px 16px 0; */
 }
 
 .NavbarUL {
