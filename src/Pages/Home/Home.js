@@ -84,7 +84,7 @@ const Home = () => {
         <div className="SearchBar-m">
           <SearchBar />
         </div>
-        <div>
+        <div className="NavbarMobile-m">
           <NavbarMobile />
         </div>
         <div className="HotGames-m">

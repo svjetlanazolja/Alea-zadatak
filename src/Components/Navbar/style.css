@@ -22,6 +22,10 @@
   margin-inline-end: 6px;
 }
 
+.NavbarData {
+  align-self: center;
+}
+
 .NavbarData ul li {
   background-color: transparent;
   cursor: pointer;
