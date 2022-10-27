@@ -26,9 +26,10 @@ const NavbarItems = () => {
           type="button"
           buttonStyle="btn--yellow"
           buttonSize="btn--large"
+          className="GameShopImage"
         >
-          <img src={GAMESSHOP } alt="Games Shop" className="gameShopImg" />
-          <span className="ShopSpan">Games Shop</span>
+          <img src={ GAMESSHOP } alt="Games Shop" className="gameShopImg" />
+          <p className="ShopP">Games Shop</p>
         </Button>
       </div>
 

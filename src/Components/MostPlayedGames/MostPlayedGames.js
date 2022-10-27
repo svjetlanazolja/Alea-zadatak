@@ -11,9 +11,34 @@ const MostPlayedGames = () => {
   }, []);
 
   const games = async () => {
-    const response = await fetch("http://localhost:8000/mostPlayedGames");
-    setMostPlayedGames(await response.json());
+    const response = await fetch("http://localhost:8000/allGames");
+    const jsonResponse = await response.json();
+    const mostPlayedGamesResponse = jsonResponse.filter(function (i) {
+      return i.isMostPlayedGames === true;
+    });
+    setMostPlayedGames(mostPlayedGamesResponse);
   };
+
+  function setFavoriteGame(id) {
+    const updateGame = {
+      isFavoriteGames: true,
+    };
+    fetch("http://localhost:8000/allGames/" + id, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(updateGame),
+    });
+    window.location.reload();
+  }
+  function GetImgSource(isFav, path) 
+  {
+    return isFav ? "/assets/yellow-star.png" : path;
+  }
+
+
+
 
   return (
     <div className="CardContainer">
@@ -35,7 +60,8 @@ const MostPlayedGames = () => {
               </div>
               <div className="BiggestWingsStar">
                 <img
-                  src={data.starPath}
+                  src={GetImgSource(data.isFavoriteGames, data.starPath)}
+                  onClick={() => setFavoriteGame(data.id)}
                   alt="Favorite Games"
                   className="star"
                 />

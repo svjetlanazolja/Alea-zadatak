@@ -1,3 +1,22 @@
 .MostPlayedGamesContainer {
-    padding: 0 15px;
+  padding: 5px 15px;
+}
+
+.MostPlayedGamesContainer .FavoriteWinsData .BigestWinsImage {
+  width: 25% !important;
+}
+
+.MostPlayedGamesContainer .FavoriteWinsData .BigestWinsImage img {
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .BigestWinsImage {
+    width: 45% !important;
+    align-self: center !important;
+  }
+
+  .FavoritetWinsDescription {
+    width: 40% !important;
+  }
 }

@@ -11,9 +11,30 @@ const GameSlider = () => {
   }, []);
 
   const games = async () => {
-    const response = await fetch("http://localhost:8000/recommendedGames");
-    setRecommendedGames(await response.json());
+    const response = await fetch("http://localhost:8000/allGames");
+    const jsonResponse = await response.json();
+    const recommendedGamesResponse = jsonResponse.filter(function (i) {
+      return i.isRecomended === true;
+    });
+    setRecommendedGames(recommendedGamesResponse);
   };
+
+  function setFavoriteGame(id) {
+    const updateGame = {
+      isFavoriteGames: true,
+    };
+    fetch("http://localhost:8000/allGames/" + id, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(updateGame),
+    });
+    window.location.reload();
+  }
+  function GetImgSource(isFav, path) {
+    return isFav ? "/assets/yellow-star.png" : path;
+  }
 
   const settings = {
     infinite: true,
@@ -24,26 +45,26 @@ const GameSlider = () => {
     dots: true,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1441,
         settings: {
           slidesPerRow: 3,
-        }
+        },
       },
       {
-          breakpoint: 768,
-          settings: {
-            slidesPerRow: 2,
-            rows: 1,
-          }
+        breakpoint: 1280,
+        settings: {
+          slidesPerRow: 2,
+          rows: 1,
         },
-        {
-          breakpoint: 375,
-          settings: {
-            slidesPerRow: 1,
-            rows: 1,
-          }
-        }
-      ]
+      },
+      {
+        breakpoint: 375,
+        settings: {
+          slidesPerRow: 1,
+          rows: 1,
+        },
+      },
+    ],
   };
 
   return (
@@ -62,11 +83,12 @@ const GameSlider = () => {
                 />
               </div>
 
-              <div className="cardDescriptionContainer" >
+              <div className="cardDescriptionContainer">
                 <div className="cardDescription">
                   <p>{data.title}</p>
                   <img
-                    src={data.starPath}
+                    src={GetImgSource(data.isFavoriteGames, data.starPath)}
+                    onClick={() => setFavoriteGame(data.id)}
                     alt="Recommended Games"
                     className="star"
                   />
@@ -74,18 +96,19 @@ const GameSlider = () => {
               </div>
 
               <div className="cardItems">
-                <div className="fill"><p className="p-inCards">{data.reels}</p></div>
-                <div className="fill"><p className="p-inCards">{data.jackpot}</p></div>
-                <div className="fill"><p className="p-inCards">{data.freespin}</p></div>
+                <div className="fill">
+                  <p>{data.reels}</p>
+                </div>
+                <div className="fill">
+                  <p>{data.jackpot}</p>
+                </div>
+                <div className="fill">
+                  <p>{data.freespin}</p>
+                </div>
               </div>
-              <div>
-              <img
-                    src={data.icon}
-                    alt="Recommended Games"
-                    className="star"
-                  />
+              <div className="RecommendedIcon">
+                <img src={data.icon} alt="Recommended Games" />
               </div>
-             
             </div>
           );
         })}

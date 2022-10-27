@@ -5,3 +5,7 @@
     flex-wrap: wrap;
 }
 
+.NavbarItemsContainer .buttonContainer .btn--yellow {
+    margin-left: 20px;
+}
+

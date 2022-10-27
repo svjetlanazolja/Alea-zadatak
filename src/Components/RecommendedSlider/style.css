@@ -18,6 +18,26 @@
   margin: 10px;
   padding: 10px;
   border-radius: 12px;
+  position: relative;
+}
+
+.recommendedGamesCard .RecommendedIcon {
+  margin-top: 10px;
+  position:absolute;
+  bottom: 10px;
+}
+
+
+
+.fill p {
+  border-radius: 8px;
+  background-color: var(--primary);
+  margin: 3px;
+  padding: 3px 10px;
+}
+
+.fill p:empty {
+  display: none;
 }
 
 .slick-prev,
@@ -46,26 +66,27 @@
 
 .cardDescription {
   justify-content: space-between;
+  width: 100%;
 }
 
-.cardItems {
+.recommendedGamesCard .cardItems {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
-.slick-dots li.slick-active button:before, 
+.slick-dots li.slick-active button:before,
 .slick-dots li button:before {
   color: var(--white);
 }
 
 
-/* .cardItems .fill {
-  background: var(--primary);
-  width: fit-content;
-  margin: 7px 0;
-  border-radius: 8px;
-  padding: 2px 14px;
-} */
+@media (max-width: 1280px) {
+  .slick-slider .recommendedGamesCard .cartImg img {
+    margin: auto;
+  }
+}
 
 @media (max-width: 768px) {
   #recommendedGamesCard .slick-slide div {

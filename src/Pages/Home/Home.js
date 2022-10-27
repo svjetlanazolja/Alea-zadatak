@@ -11,10 +11,11 @@ import CardInfoImages from "../../Assets-img/CardInfoImages/CardInfoImages";
 import MostPlayedGames from "../../Components/MostPlayedGames/MostPlayedGames";
 import CountdownTimer from "../../Components/CountdownTimer/CountdownTimer";
 import NavbarMobile from "../../Components/NavbarMobile/NavbarMobile"
-import Button from "../../Components/Button.js/Button";
 import RecommendedSlider from "../../Components/RecommendedSlider/RecommendedSlider";
 import DropdownMeni from "../../Components/DropdownMenu/DropdownMeni";
+import Button from "../../Components/Button.js/Button";
 import "./style.css";
+import TournamentsSlider from "../../Components/TournamentsSlider/TournamentsSlider";
 
 const Home = () => {
   const { AGEOFTHEGODS, BUFFALOBLITZ, GAMESSHOP } = CardInfoImages;
@@ -55,7 +56,11 @@ const Home = () => {
                   />
                 </div>
               </div>
+
+                <TournamentsSlider />
+
             </div>
+
           </div>
 
           <div className="MostPlayedGames width25">
@@ -99,7 +104,7 @@ const Home = () => {
         <div className="RecommendedSlider-m">
           <RecommendedSlider />
         </div>
-        <div className="TournamentsContainer">
+        {/* <div className="TournamentsContainer">
           <h2>Ongoing Tournaments</h2>
           <div className="CountDownTimersCards">
             <CountdownTimer
@@ -111,7 +116,8 @@ const Home = () => {
               image={BUFFALOBLITZ}
             />
           </div>
-        </div>
+        </div> */}
+        <TournamentsSlider /> 
       </section>
     </div>
   );

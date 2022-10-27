@@ -1,12 +1,19 @@
 .BigestWinsData {
   display: flex;
   justify-content: space-between;
-  padding: 0 15px;
+  padding: 5px 15px;
   gap: 15px;
+  margin: 5px;
 }
 
-.BigestWinsImage {
+
+.BiggestWinsContainer .BigestWinsImage {
   margin: auto 0;
+  width: 25%;
+}
+
+.BiggestWinsContainer .BigestWinsImage img {
+  width: 100%;
 }
 
 .BigestWinsDescription {

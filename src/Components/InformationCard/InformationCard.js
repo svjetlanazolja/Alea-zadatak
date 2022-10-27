@@ -13,7 +13,7 @@ const InformationCard = () => {
   };
 
   return (
-    <div className="InformationCardContainer">
+    <div className="InformationCardContainer InformationCardContainerResponsive">
       {InformationCard.map((data) => {
         return (
           <div key={data.id} className="InformationsCardData">
@@ -21,7 +21,7 @@ const InformationCard = () => {
               <img src={data.path} alt="Information" className="GameImg" />
             </div>
             <div className="FavoritetWinsDescription InformationDescription">
-              <h2 className="infoTitle">{data.title}</h2>
+              <h3 className="infoTitle">{data.title}</h3>
               <p className="infoP">{data.info}</p>
             </div>
           </div>

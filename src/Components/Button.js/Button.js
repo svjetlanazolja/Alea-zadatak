@@ -24,7 +24,7 @@ const Button = ({ children, type, onClick, buttonStyle, buttonSize, icon }) => {
       onClick={onClick}
       type={type}
     >
-      <img src={icon} alt="" className="" />
+      {/* <img src={icon} alt="icon" className="" /> */}
       {children}
     </button>
   );

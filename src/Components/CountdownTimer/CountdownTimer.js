@@ -43,12 +43,12 @@ const CountdownTimer = ({ countdownTimestampMs, image }) => {
         <span className="white-dots">:</span>
         <div className="time-circle">
           <span className="two-numbers">{remainingTime.minutes}</span>
-          <span className="time-desc">minutes</span>
+          <span className="time-desc">min</span>
         </div>
         <span className="white-dots">:</span>
         <div className="time-circle">
           <span className="two-numbers">{remainingTime.seconds}</span>
-          <span className="time-desc">seconds</span>
+          <span className="time-desc">sec</span>
         </div>
       </div>
 

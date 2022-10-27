@@ -1,34 +1,58 @@
 .FavoriteGamesContainer {
-  padding: 0 15px;
+  padding: 5px 15px;
+}
+
+.FavoriteGamesContainer .BigestWinsImage {
+  width: 25%;
+  margin: auto;
+}
+
+.FavoriteGamesContainer .BigestWinsImage img {
+  width: 100%;
 }
 
 .FavoriteWinsData {
   display: flex;
   justify-content: space-between;
   gap: 15px;
+  margin: 5px;
 }
 
 .DescriptionItem {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .DescriptionItem p {
-  padding: 3px;
+  border-radius: 8px;
+  background-color: var(--primary);
+  margin: 0px 3px;
+  padding: 3px 5px;
+}
+
+.DescriptionItem p:empty {
+  display: none;
 }
 
 .Section2 .CardContainer {
-    height: max-content;
+  height: max-content;
 }
 
 .Section2 {
   margin: 15px 0;
+  width: 100%;
 }
 
 .FavoritetWinsDescription {
-    width: 65%;
+  width: 65%;
 }
 
-/* @media (max-width: 1440px) {
- 
+@media (max-width: 1680px) {
+  .DescriptionItem {
+    margin-top: -15px;
+  }
 
-} */
+  .FavoritetWinsDescription p {
+    margin-top: 6px;
+  }
+}

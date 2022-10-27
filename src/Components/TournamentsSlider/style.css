@@ -1,0 +1,41 @@
+.TournamentsSliderContainer {
+  margin: 20px;
+}
+
+.TournamentsSliderContainer .countdown-container {
+  padding: 0;
+}
+
+.TournamentsSliderContainer .image-tournaments,
+.TournamentsSliderContainer .image-tournaments img,
+.TournamentsSliderContainer .countdown-container {
+  width: 100%;
+}
+
+@media (max-width: 1365px) {
+  .TournamentsSliderContainer .countdown-timer {
+    font-size: 28px;
+  }
+
+  .TournamentsSliderContainer .time-circle {
+    width: 50px;
+  }
+
+  .TournamentsSliderContainer .countdown-timer span {
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+
+  .TournamentsSliderContainer .btn--large {
+    padding: 14px 28px;
+  }
+
+  .TournamentsSliderContainer .slick-dots {
+    bottom: -60px !important
+    ;
+  }
+
+  .TournamentsSliderContainer .slick-dots li button:before {
+    color: var(--white) !important;
+  }
+}

@@ -70,8 +70,44 @@ a {
   background-color: var(--lightdark);
 }
 
+@media (max-width: 1280px) {
+  .searchInputsResponsive input {
+    border-right: none;
+    border-radius: inherit;
+  }
+
+  .butonNavResponsive {
+    position: relative;
+  }
+
+  .butonNavResponsive button {
+    margin-top: 20px;
+  }
+
+  .searchInputsResponsive .NavButtonsContainer {
+    flex-direction: column;
+    position: absolute;
+    right: -19px;
+    z-index: 1;
+  }
+}
+
 @media (max-width: 768px) {
   .search {
     padding: 20px 0;
+  }
 }
+
+
+
+
+/* ********** */
+
+@media (min-width: 1366px) {
+
 }
+
+@media (min-width: 1366px) {
+
+}
+

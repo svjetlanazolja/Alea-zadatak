@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import CardInfo from "../CardInfo/CardInfo";
-import CardInfoImages from "../../Assets-img/CardInfoImages/CardInfoImages" 
+import CardInfoImages from "../../Assets-img/CardInfoImages/CardInfoImages";
 import "./style.css";
 
 const BiggestWins = () => {
@@ -11,13 +11,31 @@ const BiggestWins = () => {
   }, []);
 
   const games = async () => {
-    const response = await fetch("http://localhost:8000/biggestWins");
-    setBiggestWins(await response.json());
+    const response = await fetch("http://localhost:8000/allGames");
+    const jsonResponse = await response.json();
+    const biggestWinsResponse = jsonResponse.filter(function (i) {
+      return i.isBiggestWins === true;
+    });
+    setBiggestWins(biggestWinsResponse);
   };
+
+  function setFavoriteGame(id) {
+    const updateGame = {
+      isFavoriteGames: true,
+    };
+    fetch("http://localhost:8000/allGames/" + id, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(updateGame),
+    });
+    window.location.reload();
+  }
 
   return (
     <div className="CardContainer width25">
-       <CardInfo title={"Biggest Wins"} icon={BIGGESTWINS} />
+      <CardInfo title={"Biggest Wins"} icon={BIGGESTWINS} />
       <div className="BiggestWinsContainer">
         {biggestWins.map((data) => {
           return (
@@ -31,7 +49,12 @@ const BiggestWins = () => {
                 <p className="p-bold">{data.price}</p>
               </div>
               <div className="BiggestWingsStar">
-                <img src={data.starPath} alt="Biggest Wins" className="star" />
+                <img
+                  src={data.starPath}
+                  onClick={() => setFavoriteGame(data.id)}
+                  alt="Biggest Wins"
+                  className="star"
+                />
               </div>
             </div>
           );

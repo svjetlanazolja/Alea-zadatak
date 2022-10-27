@@ -11,9 +11,28 @@ const FavoriteGames = () => {
   }, []);
 
   const games = async () => {
-    const response = await fetch("http://localhost:8000/favoriteGames");
-    setFavoriteGames(await response.json());
+    const response = await fetch("http://localhost:8000/allGames");
+    const jsonResponse = await response.json();
+    const favoriteGamesResponse = jsonResponse.filter(function (i) {
+      return i.isFavoriteGames === true;
+    });
+    setFavoriteGames(favoriteGamesResponse
+      );
   };
+
+  function removeFromFavoriteGames(id) {
+    const updateGame = {
+      isFavoriteGames: false,
+    };
+    fetch ('http://localhost:8000/allGames/'+id, {
+      method: "PATCH",
+      headers: {
+        "Content-Type":"application/json",
+      },
+      body: JSON.stringify(updateGame)
+    });
+    window.location.reload();
+  }
 
   return (
     <div className="CardContainer">
@@ -36,6 +55,7 @@ const FavoriteGames = () => {
               <div className="BiggestWingsStar">
                 <img
                   src={data.starPath}
+                  onClick={() => removeFromFavoriteGames(data.id)}
                   alt="Favorite Games"
                   className="star"
                 />
