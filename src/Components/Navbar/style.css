@@ -6,7 +6,7 @@
 .NavbarItems {
   display: flex;
   justify-content: space-around !important;
-  
+
   width: 100%;
   flex-wrap: wrap;
   background-color: var(--dark);
@@ -28,7 +28,7 @@
 .NavbarData ul li {
   background-color: transparent;
   cursor: pointer;
-  padding: 0px 10px;
+  padding: 0 10px;
   border-radius: 8px;
 }
 
@@ -68,7 +68,7 @@
   align-self: center;
   background-color: var(--dark);
   border-radius: 16px 0 0 16px;
-  padding: 19px 0 ;
+  padding: 19px 0;
 }
 
 .NavbarItemsContainer .buttonContainer .btn {
@@ -94,12 +94,16 @@
     display: none;
   }
 
-  .NavbarData .NavbarLI a img {
-    margin-right: 0;
-  }
-
   .NavbarData ul li {
     padding: 10px;
+  }
+
+  .NavbarMobile-m .NavbarData ul li {
+    padding: 10px !important;
+  }
+
+  .NavbarData .NavbarLI a img {
+    margin-right: 0;
   }
 }
 
@@ -112,7 +116,4 @@
     width: auto;
     padding-right: 10px;
   }
-  
 }
-
-

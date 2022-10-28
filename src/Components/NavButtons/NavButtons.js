@@ -7,7 +7,7 @@ const NavButtons = () => {
         <Button
         onClick={() => {}}
         type="button"
-        buttonStyle="btn--yellow"
+        buttonStyle="btn--primary"
         buttonSize="btn--large"
       >
         <span>All</span>

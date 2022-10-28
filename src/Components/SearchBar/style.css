@@ -80,15 +80,57 @@ a {
     position: relative;
   }
 
-  .butonNavResponsive button {
-    margin-top: 20px;
-  }
-
   .searchInputsResponsive .NavButtonsContainer {
     flex-direction: column;
     position: absolute;
-    right: -19px;
+    right: 5px;
     z-index: 1;
+  }
+
+  .searchInputsResponsive button {
+    background-color: var(--dark);
+    border: none;
+    margin: 0 10px;
+  }
+
+  .searchInputsResponsive button:hover {
+    background-color: var(--lightdark);
+  }
+
+  .searchInputsResponsive button:active {
+    background: linear-gradient(
+      266.34deg,
+      #ffba00 7.54%,
+      #ffaa00 37.91%,
+      #ff8a00 96.62%
+    );
+  }
+
+  .searchInputsResponsive .butonNavResponsive {
+    border: 1px solid var(--border);
+    border-left: none;
+    border-radius: 0 16px 16px 0;
+    background-color: var(--dark);
+  }
+
+  .searchInputsResponsive .NavButtonsContainer {
+    background: var(--dark);
+    border-radius: 16px;
+  }
+
+  .searchInputsResponsive .butonNavResponsive .buttonSearch {
+    margin: 10px 10px 0 0;
+    background: transparent;
+  }
+
+  .searchInputsResponsive .butonNavResponsive .buttonSearch img {
+    width: 55px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .searchInputsResponsive .butonNavResponsive .buttonSearch {
+    margin: 13px 10px 0 0;
   }
 }
 
@@ -99,15 +141,16 @@ a {
 }
 
 
+/* *****mobile***** */
 
-
-/* ********** */
-
-@media (min-width: 1366px) {
-
+@media (min-width: 1281px) {
+  .searchInputsResponsive {
+    display: none;
+  }
 }
 
-@media (min-width: 1366px) {
-
+@media (max-width: 1280px) {
+  .searchInputsDes {
+    display: none;
+  }
 }
-

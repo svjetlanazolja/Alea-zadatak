@@ -2,10 +2,10 @@ import SearchImg from "../../Assets-img/Search.svg";
 import NavButtons from "../NavButtons/NavButtons";
 import "./style.css";
 import { useState, useEffect } from "react";
-
-// U Search bar sam iz json-servera (db.json) za zadatak sada povukla podatke samo iz mostPlayedGame liste
+import CardInfoImages from "../../Assets-img/CardInfoImages/CardInfoImages";
 
 const SearchBar = ({ placeholder, data }) => {
+  const { SEARCHFILTER } = CardInfoImages;
   const [mostPlayedGames, setMostPlayedGames] = useState([]);
   useEffect(() => {
     games();
@@ -38,13 +38,12 @@ const SearchBar = ({ placeholder, data }) => {
 
   return (
     <div className="search">
-
-      {/* <div className="searchInputs searchInputsDes ">
+      <div className="searchInputs searchInputsDes ">
         <div className="searchIcon">
           <img alt="SearchGames" src={SearchImg} />
         </div>
         <input type="text" placeholder={placeholder} onChange={handleFilter} />
-      </div> */}
+      </div>
 
       <div className="searchInputs searchInputsResponsive">
         <div className="searchIcon">
@@ -52,23 +51,23 @@ const SearchBar = ({ placeholder, data }) => {
         </div>
         <input type="text" placeholder={placeholder} onChange={handleFilter} />
         <div className="butonNavResponsive">
-      <button onClick={handleClick}>TEST!!!</button>
-      {isShown && <NavButtons />}
-    </div>
+          <button className="buttonSearch" onClick={handleClick}>
+            <img src={SEARCHFILTER} alt="Search Filter" />
+          </button>
+          {isShown && <NavButtons />}
+        </div>
       </div>
 
       {filteredData.length !== 0 && (
         <div className="dataResult">
           {filteredData.map((value, key) => {
             return (
-              <a  key={value.id}  href="/#" className="dataItem">
+              <a key={value.id} href="/#" className="dataItem">
                 {value.title}
-               
               </a>
             );
           })}
         </div>
-        
       )}
     </div>
   );

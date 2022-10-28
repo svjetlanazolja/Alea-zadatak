@@ -6,7 +6,8 @@ import GamesShop from "./Games_Shop.svg";
 import Home from "./Home.svg";
 import AgeOfTheGods from "./Age_of_the_Gods.png";
 import BuffaloBlitz from "./Buffalo_Blitz.png";
-import User from "./User.svg"
+import User from "./User.svg";
+import SearchFilter from "./Search_Filter.png"
 
 const CARDICONS = {
   BIGGESTWINS: BiggestWins,
@@ -17,7 +18,8 @@ const CARDICONS = {
   HOME: Home,
   AGEOFTHEGODS: AgeOfTheGods,
   BUFFALOBLITZ: BuffaloBlitz, 
-  USER: User
+  USER: User,
+  SEARCHFILTER: SearchFilter
 };
 
 export default CARDICONS;

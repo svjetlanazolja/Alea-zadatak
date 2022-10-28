@@ -19,9 +19,12 @@ const BiggestWins = () => {
     setBiggestWins(biggestWinsResponse);
   };
 
-  function setFavoriteGame(id) {
+  async function setFavoriteGame(id) {
+    const responseGame = await fetch("http://localhost:8000/allGames/" + id);
+    const jsonRes = await responseGame.json();
+    const val = jsonRes.isFavoriteGames;
     const updateGame = {
-      isFavoriteGames: true,
+      isFavoriteGames: !val,
     };
     fetch("http://localhost:8000/allGames/" + id, {
       method: "PATCH",
@@ -31,6 +34,10 @@ const BiggestWins = () => {
       body: JSON.stringify(updateGame),
     });
     window.location.reload();
+  }
+  function GetImgSource(isFav, path) 
+  {
+    return isFav ? "/assets/yellow-star.png" : path;
   }
 
   return (
@@ -50,7 +57,7 @@ const BiggestWins = () => {
               </div>
               <div className="BiggestWingsStar">
                 <img
-                  src={data.starPath}
+                  src={GetImgSource(data.isFavoriteGames, data.starPath)}
                   onClick={() => setFavoriteGame(data.id)}
                   alt="Biggest Wins"
                   className="star"

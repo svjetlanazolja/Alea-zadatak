@@ -15,7 +15,7 @@
   background-color: var(--dark);
 }
 
-.NavbarMobile-m .NavbarItems .NavbarData:first-child,
+
 .NavbarMobile-m .NavbarItems .NavbarData:last-child {
   display: none;
 }

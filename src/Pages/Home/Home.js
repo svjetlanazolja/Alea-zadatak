@@ -41,7 +41,9 @@ const Home = () => {
             <InformationCard />
             <div className="centralDiv">
               <SearchBar placeholder="Search games" data="games" />
-              <NavButtons />
+              <div className="NavButtonsDes">
+                <NavButtons />
+              </div>
               <GameSlider />
               <div className="TournamentsContainer">
                 <h2>Ongoing Tournaments</h2>

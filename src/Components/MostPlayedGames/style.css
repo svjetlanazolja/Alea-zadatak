@@ -16,7 +16,9 @@
     align-self: center !important;
   }
 
+  .MostPlayedGamesContainer .FavoriteWinsData .BigestWinsImage,
   .FavoritetWinsDescription {
-    width: 40% !important;
+    width: 45% !important;
+    align-self: center !important;
   }
 }

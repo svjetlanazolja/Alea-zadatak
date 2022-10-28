@@ -26,7 +26,7 @@ const ImagesSlider = () => {
   };
 
   return (
-    <div className="sliderContainer width50" id="imgSliderCard">
+    <div className="sliderContainer width50 imageSliderRes" id="imgSliderCard">
       <Slider {...settings}>
         {imgSlider.map((data) => {
           return (

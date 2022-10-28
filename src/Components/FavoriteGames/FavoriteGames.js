@@ -54,7 +54,7 @@ const FavoriteGames = () => {
               </div>
               <div className="BiggestWingsStar">
                 <img
-                  src={data.starPath}
+                  src="/assets/yellow-star.png"
                   onClick={() => removeFromFavoriteGames(data.id)}
                   alt="Favorite Games"
                   className="star"

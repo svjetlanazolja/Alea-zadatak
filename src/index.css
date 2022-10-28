@@ -103,7 +103,7 @@ img {
   background-color: var(--dark);
   margin: 20px 15px 60px 15px;
   border-radius: 21px;
-  padding-bottom: 100px;
+  padding-bottom: 30px;
 }
 
 .width25 {
@@ -125,6 +125,12 @@ img {
     font-size: 14px;
     line-height: 20px;
   }
+}
+
+@media (max-width: 1365px) {
+  .centralDiv {
+    padding-bottom: 80px;
+}
 }
 
 @media (max-width: 1280px) {
