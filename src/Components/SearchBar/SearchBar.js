@@ -1,18 +1,20 @@
 import SearchImg from "../../Assets-img/Search.svg";
-import NavButtons from "../NavButtons/NavButtons";
 import "./style.css";
 import { useState, useEffect } from "react";
-import CardInfoImages from "../../Assets-img/CardInfoImages/CardInfoImages";
 
-const SearchBar = ({ placeholder, data }) => {
-  const { SEARCHFILTER } = CardInfoImages;
+const SearchBar = ({ placeholder, data, onQuery }) => {
+  function handleInput(e) {
+    console.log("handleInput", e);
+    onQuery(e.target.value);
+  }
+
   const [mostPlayedGames, setMostPlayedGames] = useState([]);
   useEffect(() => {
     games();
   }, []);
 
   const games = async () => {
-    const response = await fetch("http://localhost:8000/mostPlayedGames");
+    const response = await fetch("http://localhost:8000/allGames");
     setMostPlayedGames(await response.json());
   };
 
@@ -42,20 +44,21 @@ const SearchBar = ({ placeholder, data }) => {
         <div className="searchIcon">
           <img alt="SearchGames" src={SearchImg} />
         </div>
-        <input type="text" placeholder={placeholder} onChange={handleFilter} />
+        {/* <input type="text" placeholder="Search games" onChange={handleFilter} /> */}
+        <input type="text" placeholder="Search games" onInput={handleInput} />
       </div>
 
       <div className="searchInputs searchInputsResponsive">
         <div className="searchIcon">
           <img alt="SearchGames" src={SearchImg} />
         </div>
-        <input type="text" placeholder={placeholder} onChange={handleFilter} />
-        <div className="butonNavResponsive">
+        <input type="text" placeholder="Search games" onInput={handleInput} />
+        {/* <div className="butonNavResponsive">
           <button className="buttonSearch" onClick={handleClick}>
             <img src={SEARCHFILTER} alt="Search Filter" />
           </button>
           {isShown && <NavButtons />}
-        </div>
+        </div> */}
       </div>
 
       {filteredData.length !== 0 && (

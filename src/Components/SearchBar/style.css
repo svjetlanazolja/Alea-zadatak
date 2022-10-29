@@ -71,11 +71,6 @@ a {
 }
 
 @media (max-width: 1280px) {
-  .searchInputsResponsive input {
-    border-right: none;
-    border-radius: inherit;
-  }
-
   .butonNavResponsive {
     position: relative;
   }
@@ -140,17 +135,18 @@ a {
   }
 }
 
-
 /* *****mobile***** */
 
 @media (min-width: 1281px) {
-  .searchInputsResponsive {
-    display: none;
+  .butonNavigationResponsive,
+  .searchInputsDes {
+    display: none !important;
   }
 }
 
 @media (max-width: 1280px) {
-  .searchInputsDes {
+  .search, 
+  .NavButtonDesktop {
     display: none;
   }
 }

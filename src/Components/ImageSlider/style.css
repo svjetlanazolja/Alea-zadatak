@@ -31,3 +31,15 @@
     border-radius: 16px;
   }
 }
+
+@media (max-width: 768px) {
+  .ImageSlider-m {
+     margin-top: 80px;
+  }
+}
+
+@media (max-width: 440px) {
+  .ImageSlider-m {
+    display: none;
+  }
+}

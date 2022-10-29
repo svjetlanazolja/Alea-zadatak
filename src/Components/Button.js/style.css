@@ -60,6 +60,14 @@
     cursor: pointer;
 }
 
+.btn--more {
+    background: linear-gradient(266.34deg, #FFBA00 7.54%, #FFAA00 37.91%, #FF8A00 96.62%);
+    color: var(-black);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
 /* Button Size */
 
 .btn--small {
@@ -75,6 +83,10 @@
 .btn--large {
     padding: 13px 24px;
     font-size: 16px;
+}
+
+.btn--more span {
+    font-weight: 900;
 }
 
 @media (max-width: 1680px) {

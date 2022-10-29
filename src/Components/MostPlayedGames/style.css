@@ -10,6 +10,11 @@
   width: 100%;
 }
 
+.MostPlayedGamesButton {
+  text-align: center;
+  margin: 20px 0;
+}
+
 @media (max-width: 1024px) {
   .BigestWinsImage {
     width: 45% !important;
@@ -20,5 +25,19 @@
   .FavoritetWinsDescription {
     width: 45% !important;
     align-self: center !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .BiggestWinsContainer .BigestWinsImage {
+    width: 25% !important;
+  }
+
+  .MostPlayedGamesContainer .FavoriteWinsData .BigestWinsImage {
+    width: 25% !important;
+  }
+
+  .FavoritetWinsDescription {
+    width: 50%;
   }
 }

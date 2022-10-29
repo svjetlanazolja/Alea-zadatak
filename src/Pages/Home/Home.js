@@ -1,24 +1,21 @@
 import HotGames from "../../Components/HotGames/HotGames";
 import BiggestWins from "../../Components/BiggestWins/BiggestWins";
-import GameSlider from "../../Components/RecommendedSlider/RecommendedSlider";
 import FavoriteGames from "../../Components/FavoriteGames/FavoriteGames";
 import NavbarItems from "../../Components/Navbar/Navbar";
 import ImagesSlider from "../../Components/ImageSlider/ImgSlider";
 import InformationCard from "../../Components/InformationCard/InformationCard";
-import SearchBar from "../../Components/SearchBar/SearchBar";
-import NavButtons from "../../Components/NavButtons/NavButtons";
 import CardInfoImages from "../../Assets-img/CardInfoImages/CardInfoImages";
 import MostPlayedGames from "../../Components/MostPlayedGames/MostPlayedGames";
 import CountdownTimer from "../../Components/CountdownTimer/CountdownTimer";
-import NavbarMobile from "../../Components/NavbarMobile/NavbarMobile"
-import RecommendedSlider from "../../Components/RecommendedSlider/RecommendedSlider";
+import NavbarMobile from "../../Components/NavbarMobile/NavbarMobile";
 import DropdownMeni from "../../Components/DropdownMenu/DropdownMeni";
+import TournamentsSlider from "../../Components/TournamentsSlider/TournamentsSlider";
+import SearchFilterRecommended from "../../Components/SearchFilterRecommended/SearchFilterRecommended";
 import Button from "../../Components/Button.js/Button";
 import "./style.css";
-import TournamentsSlider from "../../Components/TournamentsSlider/TournamentsSlider";
 
 const Home = () => {
-  const { AGEOFTHEGODS, BUFFALOBLITZ, GAMESSHOP } = CardInfoImages;
+  const { AGEOFTHEGODS, BUFFALOBLITZ, GAMESSHOP, BUFFALOBLITZIMG } = CardInfoImages;
 
   return (
     <div className="AppContainer">
@@ -40,11 +37,14 @@ const Home = () => {
           <div className=" width50">
             <InformationCard />
             <div className="centralDiv">
-              <SearchBar placeholder="Search games" data="games" />
+              {/* <SearchBar placeholder="Search games" data="games" />
               <div className="NavButtonsDes">
                 <NavButtons />
               </div>
-              <GameSlider />
+              <GameSlider /> */}
+
+              <SearchFilterRecommended />
+
               <div className="TournamentsContainer">
                 <h2>Ongoing Tournaments</h2>
                 <div className="CountDownTimersCards">
@@ -59,10 +59,8 @@ const Home = () => {
                 </div>
               </div>
 
-                <TournamentsSlider />
-
+              <TournamentsSlider />
             </div>
-
           </div>
 
           <div className="MostPlayedGames width25">
@@ -75,7 +73,7 @@ const Home = () => {
 
       <section className="MobileAppContainer">
         <div className="User-m">
-          <div>
+          <div className="mobileButtonsNav">
             <Button
               onClick={() => {}}
               type="button"
@@ -85,13 +83,28 @@ const Home = () => {
               <img src={GAMESSHOP} alt="Games Shop" className="gameShopImg" />
               <span className="ShopSpan">Games Shop</span>
             </Button>
-          </div >
+          </div>
           <DropdownMeni />
         </div>
-        <div className="SearchBar-m">
+        {/* <div className="SearchBar-m">
           <SearchBar />
+        </div> */}
+
+
+
+        <div className="ImageSlider-m">
+          <ImagesSlider />
         </div>
-        <div className="NavbarMobile-m">
+
+        <div className="HeaderImage">
+        <img src={BUFFALOBLITZIMG} alt="Buffalo Blitz" className="BuffaloBlitzHeader" />
+        </div>
+
+        <div className="SearchFilterRecommended">
+        <SearchFilterRecommended />
+        </div>
+
+       <div className="NavbarMobile-m">
           <NavbarMobile />
         </div>
         <div className="HotGames-m">
@@ -100,26 +113,16 @@ const Home = () => {
         <div className="BiggestWins-m">
           <BiggestWins />
         </div>
+        <div className="MostPlayedGames-m">
+          <MostPlayedGames />
+        </div>
         <div className="InformationCard-m">
           <InformationCard />
         </div>
-        <div className="RecommendedSlider-m">
+        {/* <div className="RecommendedSlider-m">
           <RecommendedSlider />
-        </div>
-        {/* <div className="TournamentsContainer">
-          <h2>Ongoing Tournaments</h2>
-          <div className="CountDownTimersCards">
-            <CountdownTimer
-              countdownTimestampMs={1671321162000}
-              image={AGEOFTHEGODS}
-            />
-            <CountdownTimer
-              countdownTimestampMs={1671111152000}
-              image={BUFFALOBLITZ}
-            />
-          </div>
         </div> */}
-        <TournamentsSlider /> 
+        <TournamentsSlider />
       </section>
     </div>
   );

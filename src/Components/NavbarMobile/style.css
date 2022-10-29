@@ -1,5 +1,9 @@
-.NavbarMobile-m .NavbarItemsContainer {
-  margin-bottom: 20px;
+.NavbarMobile-m {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 5;
 }
 
 .NavbarMobile-m .NavbarContainer {
@@ -15,12 +19,11 @@
   background-color: var(--dark);
 }
 
-
 .NavbarMobile-m .NavbarItems .NavbarData:last-child {
   display: none;
 }
 
-.NavbarMobile-m  .NavbarUL {
+.NavbarMobile-m .NavbarUL {
   list-style-type: none;
   padding-inline-start: 0;
   margin-block-start: 6px;
@@ -36,7 +39,7 @@
   border-radius: 8px;
 }
 
-.NavbarMobile-m  .NavbarData ul li:hover {
+.NavbarMobile-m .NavbarData ul li:hover {
   background-color: var(--lightdark);
 }
 
@@ -56,8 +59,8 @@
   font-weight: 900;
 }
 
-.NavbarMobile-m  .NavbarList,
-.NavbarMobile-m  .NavbarItemsContainer {
+.NavbarMobile-m .NavbarList,
+.NavbarMobile-m .NavbarItemsContainer {
   display: flex;
   text-decoration: none;
   width: 100%;
@@ -66,4 +69,51 @@
 .NavbarMobile-m .NavbarList img,
 .NavbarMobile-m .gameShopImg {
   margin-right: 12px;
+}
+
+.User-m {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+.User-m .DropbarContainer {
+  /* padding: 0 40px; */
+  align-self: center;
+}
+
+.User-m .btn--large {
+  padding: 10px 14px;
+  align-items: center;
+  display: flex;
+}
+
+.HeaderImage {
+  margin-top: 70px;
+}
+
+@media (max-width: 440px) {
+  .NavbarMobile-m .NavbarUL {
+    margin-inline-start: 0px !important ;
+    margin-inline-end: 0px !important;
+  }
+
+  .HeaderImage {
+    display: flex;
+  }
+
+  .BuffaloBlitzHeader {
+    margin: auto;
+  }
+}
+
+
+
+/* ********* min-width */
+@media (min-width: 441px) {
+  .HeaderImage {
+    display: none;
+  }
 }

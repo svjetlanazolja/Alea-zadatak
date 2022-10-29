@@ -1,11 +1,31 @@
 import Button from "../Button.js/Button";
-import "./style.css"
+import "./style.css";
+import { useState } from "react";
 
-const NavButtons = () => {
+const NavButtons = ({ onChangeQuery }) => {
+  const [selectedCategory, setselectedCategory] = useState([]);
+  
+
+  function onClick(name) {
+    if (name === "All") {
+      setselectedCategory([]);
+      onChangeQuery([]);
+      return;
+    }
+    if (selectedCategory.includes(name)) {
+      selectedCategory.splice(selectedCategory.indexOf(name), 1);
+      setselectedCategory(selectedCategory);
+      onChangeQuery(selectedCategory);
+    } else {
+      setselectedCategory([...selectedCategory, name]);
+      onChangeQuery([...selectedCategory, name]);
+    }
+  }
+
   return (
-    <div className="NavButtonsContainer">
-        <Button
-        onClick={() => {}}
+    <div className="NavButtonsContainer" id="NavButtonsContainerContainer">
+      <Button
+        onClick={(e) => onClick("All")}
         type="button"
         buttonStyle="btn--primary"
         buttonSize="btn--large"
@@ -13,7 +33,7 @@ const NavButtons = () => {
         <span>All</span>
       </Button>
       <Button
-        onClick={() => {}}
+        onClick={(e) => onClick("Bonus")}
         type="button"
         buttonStyle="btn--primary"
         buttonSize="btn--large"
@@ -21,7 +41,7 @@ const NavButtons = () => {
         <span>Bonus</span>
       </Button>
       <Button
-        onClick={() => {}}
+        onClick={(e) => onClick("Collapsing")}
         type="button"
         buttonStyle="btn--primary"
         buttonSize="btn--large"
@@ -29,7 +49,7 @@ const NavButtons = () => {
         <span>Collapsing</span>
       </Button>
       <Button
-        onClick={() => {}}
+        onClick={(e) => onClick("Freespins")}
         type="button"
         buttonStyle="btn--primary"
         buttonSize="btn--large"
@@ -37,7 +57,7 @@ const NavButtons = () => {
         <span>Freespins</span>
       </Button>
       <Button
-        onClick={() => {}}
+        onClick={(e) => onClick("Jackpot")}
         type="button"
         buttonStyle="btn--primary"
         buttonSize="btn--large"
@@ -45,7 +65,7 @@ const NavButtons = () => {
         <span>Jackpot</span>
       </Button>
       <Button
-        onClick={() => {}}
+        onClick={(e) => onClick("Multipliers")}
         type="button"
         buttonStyle="btn--primary"
         buttonSize="btn--large"
@@ -53,7 +73,7 @@ const NavButtons = () => {
         <span>Multipliers</span>
       </Button>
       <Button
-        onClick={() => {}}
+        onClick={(e) => onClick("3 Reels")}
         type="button"
         buttonStyle="btn--primary"
         buttonSize="btn--large"

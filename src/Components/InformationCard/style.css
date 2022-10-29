@@ -66,6 +66,7 @@
 @media (max-width: 768px) {
   .InformationCard-m .InformationCardContainer {
     flex-direction: column;
+    margin: 20px 0;
   }
 
   .InformationCard-m .InformationsCardData {

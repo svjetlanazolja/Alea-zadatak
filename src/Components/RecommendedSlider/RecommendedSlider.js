@@ -1,24 +1,9 @@
 import Slider from "react-slick";
-import { useEffect, useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./style.css";
 
-const GameSlider = () => {
-  const [recommendedGames, setRecommendedGames] = useState([]);
-  useEffect(() => {
-    games();
-  }, []);
-
-  const games = async () => {
-    const response = await fetch("http://localhost:8000/allGames");
-    const jsonResponse = await response.json();
-    const recommendedGamesResponse = jsonResponse.filter(function (i) {
-      return i.isRecomended === true;
-    });
-    setRecommendedGames(recommendedGamesResponse);
-  };
-
+const GameSlider = ({ recommendedGames }) => {
   async function setFavoriteGame(id) {
     const responseGame = await fetch("http://localhost:8000/allGames/" + id);
     const jsonRes = await responseGame.json();
@@ -74,7 +59,7 @@ const GameSlider = () => {
     <div className="gameSlider" id="recommendedGamesCard">
       <h2>Recommended</h2>
       <Slider {...settings}>
-        {recommendedGames.map((data) => {
+        {(recommendedGames ? recommendedGames : []).map((data) => {
           return (
             <div key={data.id} className="recommendedGamesCard">
               {/* <div style={{ padding: "10px" }} className="cartImg"> */}
@@ -82,7 +67,7 @@ const GameSlider = () => {
                 <img
                   src={data.path}
                   alt="Recommended Games"
-                  className="GameImg"
+                  className="GameImg SliderGameImg"
                 />
               </div>
 
@@ -100,13 +85,22 @@ const GameSlider = () => {
 
               <div className="cardItems">
                 <div className="fill">
-                  <p>{data.reels}</p>
+                  <p>{data.bonus}</p>
+                </div>
+                <div className="fill">
+                  <p>{data.collapsing}</p>
+                </div>
+                <div className="fill">
+                  <p>{data.freespins}</p>
                 </div>
                 <div className="fill">
                   <p>{data.jackpot}</p>
                 </div>
                 <div className="fill">
-                  <p>{data.freespin}</p>
+                  <p>{data.Multipliers}</p>
+                </div>
+                <div className="fill">
+                  <p>{data.reels}</p>
                 </div>
               </div>
               <div className="RecommendedIcon">

@@ -5,6 +5,12 @@
     flex-wrap: wrap;
 }
 
+.NavButtonsContainer btn:active, 
+.NavButtonsContainer btn:focus,
+.NavButtonsContainer btn:target {
+    background-color: var(--yellow) !important;
+}
+
 .NavbarItemsContainer .buttonContainer .btn--yellow {
     margin-left: 20px;
 }

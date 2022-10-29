@@ -44,5 +44,12 @@
   .TournamentsSliderContainer {
     width: 60%;
     margin: auto;
+    margin-bottom: 140px;
+  }
+}
+
+@media (max-width: 575px) {
+  .TournamentsSliderContainer {
+    width: 90%;
   }
 }

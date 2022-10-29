@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import CardInfo from "../CardInfo/CardInfo";
-import CardInfoImages from "../../Assets-img/CardInfoImages/CardInfoImages" 
+import CardInfoImages from "../../Assets-img/CardInfoImages/CardInfoImages";
+import Button from "../Button.js/Button";
 import "./style.css";
 
 const MostPlayedGames = () => {
-  const { MOSTPLAYEDGAMES } = CardInfoImages
+  const { MOSTPLAYEDGAMES } = CardInfoImages;
   const [mostPlayedGames, setMostPlayedGames] = useState([]);
   useEffect(() => {
     games();
@@ -35,13 +36,9 @@ const MostPlayedGames = () => {
     });
     window.location.reload();
   }
-  function GetImgSource(isFav, path) 
-  {
+  function GetImgSource(isFav, path) {
     return isFav ? "/assets/yellow-star.png" : path;
   }
-
-
-
 
   return (
     <div className="CardContainer">
@@ -72,6 +69,16 @@ const MostPlayedGames = () => {
             </div>
           );
         })}
+        <div className="MostPlayedGamesButton">
+          <Button
+            onClick={() => {}}
+            type="button"
+            buttonStyle="btn--more"
+            buttonSize="btn--large"
+          >
+            <span>Show more</span>
+          </Button>
+        </div>
       </div>
     </div>
   );

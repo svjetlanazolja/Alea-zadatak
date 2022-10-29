@@ -156,6 +156,9 @@ img {
     display: flex;
     justify-content: space-between;
     background: var(--dark);
+  }
+
+  .User-m .mobileButtonsNav {
     padding: 10px;
   }
 }

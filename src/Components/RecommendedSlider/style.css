@@ -81,10 +81,19 @@
   color: var(--white);
 }
 
+.cartImg .SliderGameImg {
+  height: 120px;
+  margin: auto;
+}
+
 
 @media (max-width: 1280px) {
   .slick-slider .recommendedGamesCard .cartImg img {
     margin: auto;
+  }
+  .cartImg .SliderGameImg {
+    height: 160px;
+
   }
 }
 

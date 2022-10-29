@@ -1,0 +1,70 @@
+.butonNavigationResponsive {
+  display: flex;
+  margin: 15px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 0 10px 0 0;
+}
+
+.butonNavigationResponsive .SearchBarResponsive {
+  width: 90%;
+}
+
+.butonNavigationResponsive .buttonResponsive .buttonResponsiveImg {
+  background: transparent;
+  border: none;
+  padding-right: 10px;
+}
+.butonNavigationResponsive .SearchBarResponsive .search {
+  padding: 0;
+}
+
+.butonNavigationResponsive .search input {
+  border-radius: unset;
+  border-right: unset;
+}
+
+.butonNavigationResponsive .buttonResponsive {
+  width: 10%;
+  text-align: center;
+  align-self: center;
+  padding: 7px 0;
+  border-radius: 0 16px 16px 0;
+  border-left: none;
+  position: relative;
+}
+
+.butonNavigationResponsive .buttonResponsive {
+  position: relative;
+}
+
+#butonNavigationResponsive .searchIcon,
+#butonNavigationResponsive .search input,
+#butonNavigationResponsive .buttonResponsive {
+  border: none;
+}
+
+.butonNavigationResponsive .NavButtonsContainer {
+  position: absolute;
+  z-index: 5;
+  right: 20px;
+  background: var(--primary);
+  border-radius: 16px;
+}
+
+.butonNavigationResponsive .NavButtonsContainer button:hover {
+  background: var(--dark);
+}
+
+@media (max-width: 1024px) {
+    #butonNavigationResponsive .buttonResponsive .buttonResponsiveImg  {
+        width: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+  .butonNavigationResponsive, 
+  .searchIcon {
+    background-color: var(--card);
+  }
+}
