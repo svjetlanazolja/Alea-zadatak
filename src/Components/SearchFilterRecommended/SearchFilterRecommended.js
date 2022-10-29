@@ -59,13 +59,13 @@ const SearchFilterRecommended = () => {
       );
     }
 
-    if (categories.includes("jackpot")) {
+    if (categories.includes("Jackpot")) {
       recommendedGamesResponse = recommendedGamesResponse.filter(
         (x) => x.jackpot === "Jackpot"
       );
     }
 
-    if (categories.includes("multipliers")) {
+    if (categories.includes("Multipliers")) {
       recommendedGamesResponse = recommendedGamesResponse.filter(
         (x) => x.multipliers === "Multipliers"
       );

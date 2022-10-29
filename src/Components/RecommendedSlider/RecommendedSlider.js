@@ -97,7 +97,7 @@ const GameSlider = ({ recommendedGames }) => {
                   <p>{data.jackpot}</p>
                 </div>
                 <div className="fill">
-                  <p>{data.Multipliers}</p>
+                  <p>{data.multipliers}</p>
                 </div>
                 <div className="fill">
                   <p>{data.reels}</p>
