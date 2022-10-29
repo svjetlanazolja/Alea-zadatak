@@ -119,6 +119,15 @@ img {
   display: flex;
 }
 
+
+#box2 {
+  height: 100px;
+  width: 100px;
+  background: green;
+  margin: 5px;
+}
+
+
 @media (max-width: 1540px) {
   p,
   .p-bold {
